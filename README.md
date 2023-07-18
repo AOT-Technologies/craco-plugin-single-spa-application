@@ -1,4 +1,4 @@
-# craco-plugin-single-spa-application
+# craco-plugin-single-spa-app-aot
 
 Convert your CRA project into a single-spa application without ejecting and losing update support of react-scripts
 
@@ -12,7 +12,7 @@ This plugins depends on CRACO so make sure to follow the installation instructio
 ## Install
 
 ```
-npm install craco-plugin-single-spa-application --save-dev
+npm install craco-plugin-single-spa-app-aot --save-dev
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ npm install craco-plugin-single-spa-application --save-dev
 1. Open the `craco.config.js` file and apply the following changes:
 
 ```typescript
-const SingleSpaAppcracoPlugin = require('craco-plugin-single-spa-application');
+const SingleSpaAppcracoPlugin = require('craco-plugin-single-spa-app-aot');
 
 const singleSpaAppPlugin = {
   plugin: SingleSpaAppcracoPlugin,
@@ -43,6 +43,5 @@ module.exports = {
 
 2. Run `npm run craco:build` to generate your microfrontend app bundle. The output will be located under build folder and named as `my-org-my-app.js` or using the name defined in `outputFilename` option. 
 
-## License
-
-Licensed under the MIT License, Copyright ©️ 2021 Hasan Ayan. See [LICENSE.md](LICENSE) for more information.
+ 
+ 
