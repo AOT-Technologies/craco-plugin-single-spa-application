@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hasanayan/craco-plugin-single-spa-application.git"
+    "url": "git+https://github.com/AOT-Technologies/craco-plugin-single-spa-application.git"
   },
   "keywords": [
     "single-spa",
@@ -18,15 +18,16 @@
     "cra",
     "create-react-app"
   ],
-  "author": "hasanayan",
+  "author": "aot-technologies",
   "contributors": [
-    "felipeplets"
+    "felipeplets",
+    "shuhaib-aot"
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hasanayan/craco-plugin-single-spa-application/issues"
+    "url": "https://github.com/AOT-Technologies/craco-plugin-single-spa-application/issues"
   },
-  "homepage": "https://github.com/hasanayan/craco-plugin-single-spa-application#readme",
+  "homepage": "https://github.com/AOT-Technologies/craco-plugin-single-spa-application#readme",
   "dependencies": {
     "systemjs-webpack-interop": "^2.3.7"
   },
