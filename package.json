@@ -1,6 +1,6 @@
 {
   "name": "craco-plugin-single-spa-app-aot",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Convert your CRA project into a single-spa application without ejecting or losing update support of react-scripts",
   "main": "src/index.js",
   "scripts": {
