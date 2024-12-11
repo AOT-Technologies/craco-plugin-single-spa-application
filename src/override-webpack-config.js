@@ -45,7 +45,7 @@ const buildExternals = (webpackConfig, reactPackagesAsExternal, orgPackagesAsExt
   }
 
   if (!!orgPackagesAsExternal && orgName) {
-    externals.push(new RegExp(^@${orgName}/));
+    externals.push(new RegExp(`^@${orgName}/`)); // Corrected RegExp with string interpolation
   }
 
   return externals;
@@ -86,15 +86,15 @@ const overrideWebpackConfig = ({
   context: { env },
 }) => {
   if (typeof orgName !== "string") {
-    throw Error(craco-plugin-single-spa-application requires an orgName string);
+    throw Error("craco-plugin-single-spa-application requires an orgName string");
   }
 
   if (typeof projectName !== "string") {
-    throw Error(craco-plugin-single-spa-application requires an opts.projectName string);
+    throw Error("craco-plugin-single-spa-application requires an opts.projectName string");
   }
 
   webpackConfig.entry = path.resolve(entry || "src/index.js");
-  webpackConfig.output.filename = outputFilename || ${orgName}-${projectName}.js;
+  webpackConfig.output.filename = outputFilename || `${orgName}-${projectName}.js`;
   webpackConfig.output.libraryTarget = "system";
   webpackConfig.output.devtoolNamespace = projectName;
   webpackConfig.output.publicPath = "";
